@@ -390,7 +390,112 @@
             </li>
         </ul>
         </div>
+        <form class="subscribe-form">
+            <div class="subscribe-container">
+            <label for="user-email-footer" class="subscribe-form-label">Subscribe</label>
+            <input 
+            type="email" 
+            class="subscribe-form-input"
+            name="user-email-footer"
+            id="user-email-footer"
+            placeholder="E-mail"
+            required>
+            </div>
+            <div class="subscribe-btn-wrapper">
+            <button class="subscribe-btn" type="submit">Subscribe</button>
+            <svg class="subscribe-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Frame-3"></use>
+            </svg>
+            </div>
+        </form>
         </div>
     </footer>
+    <!-- ======== BACKDROP ======== -->
+    <div class="backdrop is-open">
+        <div class="modal">
+    <button class="modal-close-btn" type="button">
+        <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+    </button>
+    <p class="contacts-form-description">Leave your contacts and we will call you back</p>
+    <form class="contacts-form">
+        <div class="contacts-form-field-wrapper">
+            <label for="user-name" class="contacts-form-field-label">Name</label>
+            <div class="contacts-input-wrepper">
+            <input 
+            type="text" 
+            name="user-name" 
+            id="user-name" 
+            class="contacts-form-input"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґґ'+]"
+            title="Kyrylo"
+            required>
+            <svg class="contacts-form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+            </div>
+        </div>
+        <div class="contacts-form-field-wrapper">
+            <label for="user-email" class="contacts-form-field-label">Phone</label>
+            <div class="contacts-input-wrepper">
+            <input 
+            type="email" 
+            id="user-email" 
+            name="user-email" 
+            class="contacts-form-input"
+            title="xxxxxxx@gmail.com"
+            required>
+            <svg class="contacts-form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+            </div>
+        </div>
+        <div class="contacts-form-field-wrapper">
+            <label for="user-phone" class="contacts-form-field-label">Email</label>
+            <div class="contacts-input-wrepper">
+            <input 
+            type="tel" 
+            name="user-phone" 
+            id="user-phone"
+            class="contacts-form-input"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            required>
+            <svg class="contacts-form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+            </div>
+        </div>
+        <div class="contacts-form-field-wrapper">
+            <label for="user-comment" class="contacts-form-field-label">Comment</label>
+            <textarea 
+            name="user-comment" 
+            id="user-comment" 
+            class="contacts-form-message"
+            required
+            placeholder="Text input"></textarea>
+        </div>
+        <div class="contacts-form-checkbox-wrapper">
+            <input 
+            type="checkbox" 
+            id="privacy-policy"
+            name="privacy-policy" 
+            class="contacts-form-checkbox visually-hidden"
+            value="true"
+            required>
+            <label for="privacy-policy" class="contacts-form-checkbox-label">
+                <span class="contacts-form-own-checkbox">
+                    <svg class="contacts-form-own-checkbox-icon" width="10" height="8">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </span>
+                I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </label>
+        </div>
+        <button class="contacts-form-submit" type="submit">Send</button>
+    </form>
+        </div>
+    </div>
 </body>
 </html>
