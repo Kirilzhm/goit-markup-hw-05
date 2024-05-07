@@ -499,58 +499,64 @@ button {
 .footer-icon-link:focus{
     background-color: #31d0aa;
 }
-.subscribe-form-label{
+.subscribe-form-text{
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #fff;
+        color: #ffffff;
         display: block;
         margin-bottom: 16px;
+        margin-left: 80px;
 }
 .subscribe-form-input{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
         border-radius: 4px;
         width: 264px;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: transparent;
         color: #ffffff;
+        font-size: 12px;
+        line-height: 2;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
 }
 .subscribe-form-input::placeholder{
     font-weight: 400;
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
-        color: #fff;
+        color: #ffffff;
 }
 .subscribe-btn{
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #fff;
-        border-radius: 4px;
-            padding: 8px 64px 8px 24px;
-            width: 165px;
-            height: 40px;
-            background-color: #4d5ae5;
-            border: none;
-        margin-top: 40px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    margin-bottom: 0;
+    }
+
 .subscribe-btn:hover,
 .subscribe-btn:focus{
     background-color: #404bbf;
 }
-.subscribe-btn-wrapper{
-    position: relative;
-}
 .subscribe-btn-icon{
-    position: absolute;
-    top: 48px;
-    left: 117px;
+    margin-left: 16px;
 }
 
 .subscribe-form{
@@ -710,6 +716,9 @@ visibility: visible;
 }
 .contacts-form-field-wrapper{
     margin-bottom: 8px;
+}
+.contacts-form-message-field-wrapper{
+    margin-bottom: 16px;
 }
 .contacts-form-checkbox-label{
     margin-bottom: 16px;
