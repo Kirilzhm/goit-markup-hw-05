@@ -499,9 +499,6 @@ button {
 .footer-icon-link:focus{
     background-color: #31d0aa;
 }
-.submit-form-container{
-    
-}
 .subscribe-form-label{
     font-weight: 500;
         font-size: 16px;
@@ -712,11 +709,14 @@ visibility: visible;
         color: rgba(46, 47, 66, 0.4);
 }
 .contacts-form-field-wrapper{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .contacts-form-checkbox-label{
     margin-bottom: 16px;
     line-height: 1.17;
+}
+.contacts-form-checkbox-wrapper{
+    margin-bottom: 24px;
 }
 .contacts-form-field-icon{
     stroke: #2e2f42;
