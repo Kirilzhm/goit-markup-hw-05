@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
     <!-- ======== HEADER ======== -->
     <header class="page-header">
         <div class="container page-header-container">
@@ -32,6 +31,11 @@
                 </li>
             </ul>
         </nav>
+        <button class="mobile-menu-btn">
+            <svg class="mobile-menu-btn-open" width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+        </button>
         <address class="contacts" id="contacts">
             <ul class="contacts-menu">
                 <li class="contacts-item">
@@ -262,7 +266,7 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> 
             <!-- ======== PORTFOLIO OF WORK ======== -->
             <section class="portfolio-of-work-section section-paddings">
                 <div class="container">
@@ -270,7 +274,7 @@
                     <ul class="work-list">
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-6.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-6.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -283,7 +287,7 @@
                         </li>
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-5.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-5.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -296,7 +300,7 @@
                         </li>
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-4.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-4.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -309,7 +313,7 @@
                         </li>
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-3.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-3.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -322,7 +326,7 @@
                         </li>
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-2.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-2.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -335,7 +339,7 @@
                         </li>
                         <li class="work-item">
                             <div class="photo-and-overlay">
-                                <img src="./images/portfolios/img-1.jpg" alt="photo of portfolio" width="360" height="300">
+                                <img class="portfolio-of-work-img" src="./images/portfolios/img-1.jpg" alt="photo of portfolio">
                                     <p class="text-in-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                         Tracker App · Exotic
                                         Fruit Ecommerce App ·
@@ -353,6 +357,7 @@
     <!-- ======== FOOTER ======== -->
     <footer class="page-footer">
         <div class="container-in-footer">
+            <div class="big-text-and-icons">
         <div class="container footer-container">
         <a class="logo-in-footer" href="./index.html">Web<span class="text-color-white">Studio</span></a>
         <p class="contacts-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -390,6 +395,7 @@
             </li>
         </ul>
         </div>
+        </div>
         <div class="submit-form-container">
             <p class="subscribe-form-text">Subscribe</p>
         <form class="subscribe-form">
@@ -412,7 +418,7 @@
         </div>
     </footer>
     <!-- ======== BACKDROP ======== -->
-    <div class="backdrop ">is-open
+    <div class="backdrop is-open">
         <div class="modal">
     <button class="modal-close-btn" type="button">
         <svg class="modal-close-btn-icon" width="8" height="8">
@@ -496,6 +502,39 @@
         </div>
         <button class="contacts-form-submit" type="submit">Send</button>
     </form>
+        </div>
+    </div>
+    <!-- ======== MOBILE MENU ======== -->
+    <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+            <button class="mobile-menu-close-btn">
+                <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-list-item">
+                        <a href="" class="mobile-menu-list-link">Studio</a>
+                    </li>
+                    <li class="mobile-menu-list-item">
+                        <a href="" class="mobile-menu-list-link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-list-item">
+                        <a href="" class="mobile-menu-list-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="contacts" id="contacts">
+                <ul class="contacts-mobile-menu">
+                    <li class="contacts-mobile-item">
+                        <a class="contacts-mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-mobile-item">
+                        <a class="contacts-mobile-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </div>
 </body>
